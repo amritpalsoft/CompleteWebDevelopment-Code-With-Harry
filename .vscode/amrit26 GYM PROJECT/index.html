@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrit Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap">
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2';
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/training-828732_960_720.jpg');
+            /* height: 90px; */
+
+        }
+
+        .left {
+            position: absolute;
+            left: 34px;
+            top: 20px;
+            display: inline-block;
+            /*border: 2px solid red;*/
+
+        }
+
+        .mid {
+            display: inline block;
+            width: 70%;
+            left: 80px;
+
+            margin: 20px auto;
+            /* border: 2px solid green; */
+
+
+        }
+
+        .right {
+            position: absolute;
+            right: 5px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+            left: 50px;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .navbar li a {
+            color: red;
+            text-decoration: none;
+            padding: 0px 14px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: rgb(218, 213, 213);
+        }
+
+        .left img {
+            width: 113px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 3px;
+            font size: 15px;
+        }
+
+        .btn {
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 10px;
+            cursor: pointer;
+            font-family: 'Baloo Bhai 2';
+
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid #f10c84;
+            margin: 102px 23px;
+            padding: 2px;
+            width: 51%;
+            border-radius: 2px;
+            height: 400px;
+        }
+
+        .heading {
+            margin: 3px;
+            width: 557px;
+            font-size: 35px;
+            font-size: 'Baloo Bhai 2';
+        }
+
+        #name {
+            width: 251px;
+            color: red;
+            height: 25px;
+        }
+
+        #mobileno {
+        width: 222px;
+            color: red;
+            height: 25px;
+        }
+
+        #email {
+            width: 202px;
+            color: red;
+            height: 25px;
+
+        }
+        #type{
+            width:150px;
+            height: 30px;
+            color: rgb(37, 247, 18);
+
+        }
+        #write{
+            width: 500px;
+            height: 67px;
+            color red ;
+
+        }
+        #submit{
+            width: 100px;
+            height: 30px;
+            color: red;
+        position: relative;
+        top: -85px;
+        left: 22px;
+            
+
+        }
+        #reset{
+            width: 100px;
+            height: 30px;
+            color: red;
+            position: relative;
+        top: -85px;
+        left: 22px;
+
+        }
+        .amr{
+            font-size: 15px;
+        }
+        .details{
+            color: rgb(236, 22, 154);
+            font
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo   -->
+        <div class="left">
+            <img src="img/download (1).png" alt="">
+            <div class="amr">Amrit Fitness</div>
+        </div>
+        <!-- mid boix for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="https://google.com" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- /* right b ox for buttons */ -->
+        <div class="right">
+            <button class="btn">Call Us Now</button><button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3 class="heading" id="">Enroll Now and Get 60% Off !!!</h3>
+        <form action="backend.java"></form>
+        <div class="details">
+            <label for="name">Name</label>
+            <input type="text" name="myName" id="name">
+        </div><br>
+        <div class="details">
+            <label for="mobileno">Mobile No</label>
+            <input type="text" name="myMobileNo" id="mobileno">
+        </div><br>
+        <div class="details">
+            <label for="email">Email Adress</label>
+            <input type="text" email="myEmail" id="email">
+        </div><br>
+        <div class="details">
+            <label for="type">Type of Membership</label>
+            <select name="type" id="type">
+                <option value="regular">Regular at 6000/month</option>
+                <option value="premium">Premium for 8000/month</option>
+                <option value="quarterly">Quarterly at 12000/quarter</option>
+                <option value="annual"selected>Annual at 36000 /annum </option>
+            </select>
+        </div><br>
+        <div>
+            <label for="write">Write About Yourself :</label>
+           <br> <textarea name="myText" id="write" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+<input id="submit" type="button" value="Submit Now">
+<input id="reset" type="button" value="Reset Now">
+</body>
+
+</html>

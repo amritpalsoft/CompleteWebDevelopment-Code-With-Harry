@@ -1,0 +1,42 @@
+<!-- /*this is a json Tutorial
+  we can convert any javascript object to a string by JSON using stringify
+  and convert back into object using parse*/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json Tutorial</title>
+</head>
+
+<body>
+
+    <div class="container">This is my container</div>
+
+    <script>
+        let jsonObj = {                  //this is a js object
+            name: "Amrit",
+            channel: "CWH",
+            friend: "Rohan Das",
+            food: "Bhindi"
+        }
+
+        console.log(jsonObj);
+
+        let myJsonStr = JSON.stringify(jsonObj); //js object to a string 
+        console.log(myJsonStr);
+
+        myJsonStr = myJsonStr.replace('Amrit', 'AP');   //changing the  content of JSON string
+        console.log(myJsonStr)
+
+        newJsonObj = JSON.parse(myJsonStr);  //converts string back into object
+        console.log(newJsonObj)
+
+
+
+
+    </script>
+</body>
+
+</html>

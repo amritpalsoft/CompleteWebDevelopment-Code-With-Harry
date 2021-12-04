@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <!-- In Html there are 3 types of selectors
+   i-Element Selector: like p for paragraph, h for heading
+   ii-Id Selector: In this styles are applied to only those element which have ID name
+   iii-Class selector: in this styles are applied to class  -->
+    <!-- # is used to represent ID . symbol is used for Class   -->
+    <style>
+      /* this is a element selector  */
+      p {
+        color: blue;
+      }
+      /* this is a ID selector , and this is used when we want to give property to a particular element */
+      #purple {
+        color: red;
+        background: yellow;
+        border: black;
+      }
+      /* this is a class selector, and this is used when we give same property to different elements  */
+      .new {
+        color: green;
+        background: grey;
+      }
+      /* this is a group selector  */
+      span,
+      footer {
+        color: hotpink;
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS Selector</h3>
+    <p id="purple">This is a simple paragraph to demonstrate CSS Selector</p>
+    <p>This is a simple paragraph to demonstrate CSS Selector</p>
+    <div>
+      <p class="new">
+        This is a another simple paragraph by using div to demonstrate CSS
+        Selector
+      </p>
+    </div>
+    <p>This is a simple paragraph to demonstrate CSS Selector</p>
+    <span>This is span</span>
+    <footer>This is footer</footer>
+  </body>
+</html>

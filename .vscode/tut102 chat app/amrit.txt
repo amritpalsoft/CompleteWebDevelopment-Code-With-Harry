@@ -1,0 +1,8 @@
+http long poling
+web socket use for two way connection btween client and server
+
+like http and https, there are ws(web socket) and wss(web socket secure protocol)
+
+We will implement this app through node js by 'node js socket io'
+
+Socket.io is a javascript library for real time web applications.

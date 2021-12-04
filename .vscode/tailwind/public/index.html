@@ -1,0 +1,27 @@
+<!-- in tailwind css
+first we have npm init so a package.json is created
+then we install npm i tailwindcss
+then create two folders src and public 
+then in src folder create style.css and then include in content from tailwind
+ website
+
+ then in package.json file under the script tag write
+ "build-css":"tailwindcss build src/style.css -o public/style.css"
+ then run npm run build-css
+ then a style.css will be created in public folder and then include it in 
+ html file
+ tailwind css works on classes so we just have to add class in html elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="hover:underline text-center text-purple-700 text-opacity-150">Hello World</h1>
+</body>
+</html>

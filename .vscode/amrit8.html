@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        body{
+            background-color: rgb(223, 191, 15);
+            
+        
+        }
+        #watermark
+{
+ position:fixed;
+ bottom:50px;
+ right:50px;
+ opacity:0.5;
+ z-index:99;
+ color:white;
+}
+    </style>
+</head>
+<body>
+    <!-- <a href="D:\CompleteWebDevelopment\.vscode\download (1).jpg">s</a> -->
+    <!-- <img src="download (1).jpg" alt="nne"> -->
+    <h2>This is form tutorials</h2>
+    <form method="post"  action="backend.java" >
+        
+        <div> 
+       <label for="name">Name</label>
+        <input type="text"name="myName"id="name">
+     </div><br>
+     <div>
+         
+         <label for="tel">Tel</label>
+         <input type="tel" name="myTel" id="tel">
+     </div>
+     <!-- <div id="watermark">amrit pal</div> -->
+    <br>
+    <div>
+        <!-- <img src="download (1).jpg" alt="img"> -->
+        <label for="role">Role</label>
+        <input type="text"name="myRole"id="role">
+    </div>
+    <br>
+    <div>
+        <label for="id">ID</label>
+        <input type="text"name="myID"id="id">
+    </div>
+    <br>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="myEmail" id="email">
+    </div>
+    <br>
+    <div>
+        <label for="date">Date</label>
+         <input type="date" name="myDate" id="date">
+    </div>
+    <br>
+    <div>
+        <label for="bonus">Bonus</label>
+        <input type="number" name="myNumber" id="bonus">
+    </div>
+    <br>
+    <div>
+        <label for="eligibility">Are You Eligible</label>
+         <input type="checkbox" name="myEligibility" id="eligibility"checked>
+    </div>
+    <br>
+    <div>
+        <label for="gender">Gender</label><br>
+         Male<input type="radio" name="myGender" id="gender">Female<input type="radio" name="myGender" id="gender">
+    </div>
+    <br>
+    <div>
+        <label for="write">Write about yourself</label>
+       <br> <textarea name="myText" id="write" cols="30" rows="10"></textarea>
+  
+    </div>
+    <br>
+    <div>
+        <label for="car">Car</label>
+        <select name="myCar" id="car">
+            <option value="ind">Indica</option>
+            <option value="bmw">BMW</option>
+            <option value="audi">Audi</option>
+            <option value="benz">Mercedes Benz</option>
+            <option value="tesla"selected>Tesla</option>
+        </select>
+        
+    </div>
+    <br>
+    
+       <input type="submit" value="Submit Now">
+
+         <input type="reset" value="ResetNow">
+
+</form>
+</body>
+</html>
