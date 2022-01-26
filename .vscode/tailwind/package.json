@@ -2,10 +2,10 @@
   "name": "tailwind",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "build-css":"tailwindcss build src/style.css -o public/style.css"
-    
+   
+    "start":"vite"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,8 @@
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.3",
     "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "vite": "^2.7.10"
   }
 }
